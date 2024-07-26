@@ -1,5 +1,4 @@
-from multiprocessing import Process, Pool
-from threading import Thread
+from multiprocessing import Process
 
 
 class WarehouseManager:
