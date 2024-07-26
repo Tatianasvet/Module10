@@ -1,9 +1,9 @@
-from multiprocessing import Process
+from multiprocessing import Process, Manager
 
 
 class WarehouseManager:
     def __init__(self):
-        self.data = {}
+        self.data = Manager().dict()
 
     def process_request(self, request):
         name = request[0]
